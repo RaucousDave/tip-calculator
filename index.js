@@ -44,8 +44,12 @@ const calculate = () => {
       .formatToParts(0)
       .find((part) => part.type === "currency").value;
 
-    tip_perPerson.innerHTML = (btnText * input.value) / 100 / persons.value;
-    total_perPerson.innerHTML = input.value / persons.value;
+    tip_perPerson.innerHTML = (
+      (btnText * input.value) /
+      100 /
+      persons.value
+    ).toFixed(2);
+    total_perPerson.innerHTML = (input.value / persons.value).toFixed(2);
 
     tip_perPerson.prepend(currencySymbol);
     total_perPerson.prepend(currencySymbol);
