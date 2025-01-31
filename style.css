@@ -216,4 +216,7 @@ input[type="number"] {
   .calculate {
     margin-top: 40px;
   }
+  .people-select input {
+    width: 90%;
+  }
 }
