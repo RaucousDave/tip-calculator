@@ -67,6 +67,8 @@ const reset = () => {
   total_perPerson.innerHTML = "--";
 
   // Change button back to "Calculate"
+  result.style.backgroundColor = "#25c2ab";
+  result.style.color = "#00464a";
   result.innerHTML = "CALCULATE";
   result.onclick = calculate;
 };
