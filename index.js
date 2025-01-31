@@ -5,6 +5,7 @@ let persons = document.querySelector("#persons");
 let total_perPerson = document.querySelector(".total-amount");
 let tip_perPerson = document.querySelector(".amount");
 let percents = document.querySelectorAll(".percent");
+let result = document.getElementById("calculate");
 
 const getTip = (button) => {
   btnText = button.innerHTML.replace("%", ""); // Store selected tip without '%'
@@ -48,7 +49,26 @@ const calculate = () => {
 
     tip_perPerson.prepend(currencySymbol);
     total_perPerson.prepend(currencySymbol);
+
+    result.innerHTML = "Reset";
+    result.onclick = reset;
   }
+};
+const reset = () => {
+  input.value = "";
+  persons.value = "";
+  btnText = "";
+
+  percents.forEach((percent) => {
+    percent.style.backgroundColor = ""; // Reset colors
+  });
+
+  tip_perPerson.innerHTML = "--";
+  total_perPerson.innerHTML = "--";
+
+  // Change button back to "Calculate"
+  result.innerHTML = "CALCULATE";
+  result.onclick = calculate;
 };
 
 // tip amount per person
