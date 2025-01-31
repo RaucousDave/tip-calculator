@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Azeret Mono";
+  transition: all 500ms ease;
+}
+body {
+  height: 100vh;
+}
+input {
+  outline: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style-type: none;
+}
+:root {
+  --color-one: #00464a;
+  --color-two: #25c2ab;
+  --color-thre: #88bdc2;
+}
+:root {
+  --secondary-one: #f8fbfc;
+  --secondary-two: #dbe1e3;
+  --secondary-three: #c4e4e7;
+}
+label {
+  font-weight: 300;
+  color: hsl(195, 13%, 47%);
+}
+section {
+  height: 100vh;
+  width: 100%;
+  padding: 100px;
+  background-color: hsl(185, 32%, 75%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+input {
+  color: #00464a;
+}
+.header {
+  width: 100%;
+}
+.title {
+  font-weight: 300;
+  color: var(--color-one);
+  text-align: center;
+}
+.container {
+  background-color: var(--secondary-one);
+  width: 100%;
+  height: 80%;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  margin-top: 50px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 15px;
+  padding: 5px 10px;
+}
+.bill-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.bill-field input {
+  width: 90%;
+  padding: 5px 15px;
+  margin-top: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: hsl(185, 42%, 94%);
+  font-size: 1.2rem;
+}
+.btn-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+.btn-div button {
+  background-color: #00464a;
+  color: #f8fbfc;
+  padding: 10px 5px;
+  border: none;
+}
+.btn-div button:hover {
+  background-color: #25c2ab;
+}
+.tip-selectors label {
+  margin-bottom: 30px;
+}
+.selectors {
+  margin: 20px 0;
+}
+.selectors input {
+  width: 100%;
+  padding: 10px 5px;
+  text-align: center;
+  background-color: #dbe1e3;
+  outline: none;
+  border: none;
+}
+.people-select label {
+  margin-bottom: 0px;
+}
+.people-select input {
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  background-color: hsl(185, 42%, 94%);
+  border-radius: 10px;
+  padding-left: 30px;
+  margin-top: 10px;
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+.material-symbols-outlined {
+  color: #88bdc2;
+  pointer-events: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.result {
+  background-color: #00464a;
+  width: 50%;
+  border-radius: 10px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  padding: 10px 20px;
+}
+.calculation {
+  width: 100%;
+}
+.tip-amount {
+  margin: 30px 0;
+  margin-left: 10px;
+  display: flex;
+}
+.total {
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-between;
+}
+.per-person {
+  width: 100%;
+}
+.per-person h3 {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: #f8fbfc;
+  font-weight: 300;
+}
+.per-person p {
+  font-size: 0.9rem;
+  color: #dbe1e3;
+  font-weight: lighter;
+}
+.amount {
+  color: #25c2ab;
+}
+.calculate {
+  margin-top: 80px;
+}
+.calculate button {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #25c2ab;
+  border: none;
+  color: #00464a;
+}
+.calculate button:hover {
+  background-color: #f8fbfc;
+  color: #25c2ab;
+}
+@media (max-width: 1440px) {
+  section {
+    padding: 150px;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    padding: 10px;
+  }
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .input-container,
+  .result {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .btn-div {
+    grid-template-columns: repeat(2, 1fr); /* 2 buttons per row */
+  }
+
+  .calculate {
+    margin-top: 40px;
+  }
+}
