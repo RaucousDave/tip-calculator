@@ -194,11 +194,7 @@ input[type="number"] {
   background-color: #f8fbfc;
   color: #25c2ab;
 }
-@media (max-width: 1440px) {
-  section {
-    padding: 150px;
-  }
-}
+
 @media (max-width: 768px) {
   section {
     padding: 10px;
